@@ -86,6 +86,9 @@ namespace TierSponsors_Console.srTierSponsorsService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITierSponsorsService/GetOrganisations", ReplyAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsResponse")]
         string GetOrganisations(string query);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByName", ReplyAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByNameResponse")]
+        string GetOrganisationsByName(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -125,6 +128,10 @@ namespace TierSponsors_Console.srTierSponsorsService {
         
         public string GetOrganisations(string query) {
             return base.Channel.GetOrganisations(query);
+        }
+        
+        public string GetOrganisationsByName(string name) {
+            return base.Channel.GetOrganisationsByName(name);
         }
     }
 }

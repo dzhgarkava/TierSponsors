@@ -15,3 +15,6 @@ D:\_projects\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.cs
 D:\git\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe.config
 D:\git\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.exe
 D:\git\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.pdb
+D:\git\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe
+D:\git\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.pdb
+D:\git\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.csprojResolveAssemblyReference.cache

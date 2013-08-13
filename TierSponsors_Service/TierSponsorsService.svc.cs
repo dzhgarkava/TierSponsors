@@ -30,7 +30,7 @@ namespace TierSponsors_Service
             return composite;
         }
 
-        public string GetOrganisations(string query)
+        private OrganisationsCollection SearchOrganisations(string searchQuery)
         {
             var organisations = new OrganisationsCollection
             {
@@ -46,7 +46,7 @@ namespace TierSponsors_Service
                 var ds = new DataSet();
                 da.Fill(ds);
 
-                DataRow[] dr = ds.Tables[0].Select("Name LIKE '%" + query + "%' AND Checked LIKE 'OK'");
+                DataRow[] dr = ds.Tables[0].Select(searchQuery);
                 for (int i = 0; i < dr.Count(); i++)
                 {
                     var org = new Organisation
@@ -60,8 +60,25 @@ namespace TierSponsors_Service
                     organisations.OrgList.Add(org);
                 }
             }
-            return organisations.ToJSON();
+            return organisations;
         }
 
+        public string GetOrganisations(string query)
+        {
+            string search = "Name LIKE '%" + query + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(search).ToJSON();
+        }
+
+        public string GetOrganisationsByName(string name)
+        {
+            string search = "Name LIKE '%" + name + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(search).ToJSON();
+        }
+
+        public string GetOrganisationsByCity(string city)
+        {
+            string search = "City LIKE '%" + city + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(search).ToJSON();
+        }
     }
 }
