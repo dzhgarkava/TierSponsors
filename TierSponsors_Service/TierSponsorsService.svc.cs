@@ -94,5 +94,11 @@ namespace TierSponsors_Service
             var searchString = "TierAndRating LIKE '%" + tier + "%' AND Checked LIKE 'OK'";
             return SearchOrganisations(searchString).ToJSON();
         }
+
+        public string GetOrganisationsBySubTier(string subtier)
+        {
+            var searchString = "SubTier LIKE '%" + subtier + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(searchString).ToJSON();
+        }
     }
 }
