@@ -21,7 +21,7 @@ namespace TierSponsors_Service
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
-        string GetOrganisations(string query);
+        string GetOrganisations(string name, string city, string county, string tier, string subtier);
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]

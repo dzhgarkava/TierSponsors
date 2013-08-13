@@ -31,6 +31,12 @@
   <wsdl:message name="ITierSponsorsService_GetOrganisationsByName_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOrganisationsByNameResponse" />
   </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByCity" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByCityResponse" />
+  </wsdl:message>
   <wsdl:portType name="ITierSponsorsService">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetData" message="tns:ITierSponsorsService_GetData_InputMessage" />
@@ -47,6 +53,10 @@
     <wsdl:operation name="GetOrganisationsByName">
       <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByName" message="tns:ITierSponsorsService_GetOrganisationsByName_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByNameResponse" message="tns:ITierSponsorsService_GetOrganisationsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCity" message="tns:ITierSponsorsService_GetOrganisationsByCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCityResponse" message="tns:ITierSponsorsService_GetOrganisationsByCity_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ITierSponsorsService" type="tns:ITierSponsorsService">
@@ -80,6 +90,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetOrganisationsByName">
       <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByCity">
+      <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCity" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

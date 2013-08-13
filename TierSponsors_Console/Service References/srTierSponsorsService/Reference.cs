@@ -85,10 +85,13 @@ namespace TierSponsors_Console.srTierSponsorsService {
         TierSponsors_Console.srTierSponsorsService.CompositeType GetDataUsingDataContract(TierSponsors_Console.srTierSponsorsService.CompositeType composite);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITierSponsorsService/GetOrganisations", ReplyAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsResponse")]
-        string GetOrganisations(string query);
+        string GetOrganisations(string name, string city, string county, string tier, string subtier);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByName", ReplyAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByNameResponse")]
         string GetOrganisationsByName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCity", ReplyAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCityResponse")]
+        string GetOrganisationsByCity(string city);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -126,12 +129,16 @@ namespace TierSponsors_Console.srTierSponsorsService {
             return base.Channel.GetDataUsingDataContract(composite);
         }
         
-        public string GetOrganisations(string query) {
-            return base.Channel.GetOrganisations(query);
+        public string GetOrganisations(string name, string city, string county, string tier, string subtier) {
+            return base.Channel.GetOrganisations(name, city, county, tier, subtier);
         }
         
         public string GetOrganisationsByName(string name) {
             return base.Channel.GetOrganisationsByName(name);
+        }
+        
+        public string GetOrganisationsByCity(string city) {
+            return base.Channel.GetOrganisationsByCity(city);
         }
     }
 }

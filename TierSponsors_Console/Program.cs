@@ -13,7 +13,7 @@ namespace TierSponsors_Console
         static void Main(string[] args)
         {
             var clientTierSponsorsServiceClient = new TierSponsorsServiceClient();
-            string jsonString = clientTierSponsorsServiceClient.GetOrganisationsByName("durham naer");
+            string jsonString = clientTierSponsorsServiceClient.GetOrganisations("london", "", "", "Tier 2", "");
 
             byte[] byteArray = Encoding.Unicode.GetBytes(jsonString);
             MemoryStream stream = new MemoryStream(byteArray);

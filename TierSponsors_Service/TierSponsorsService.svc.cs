@@ -63,22 +63,30 @@ namespace TierSponsors_Service
             return organisations;
         }
 
-        public string GetOrganisations(string query)
+        public string GetOrganisations(string name, string city, string county, string tier, string subtier)
         {
-            string search = "Name LIKE '%" + query + "%' AND Checked LIKE 'OK'";
-            return SearchOrganisations(search).ToJSON();
+            string _name = String.IsNullOrEmpty(name) ? "%" : "%" + name + "%";
+            string _city = String.IsNullOrEmpty(city) ? "%" : "%" + city + "%";
+            string _county = String.IsNullOrEmpty(county) ? "%" : "%" + county + "%";
+            string _tier = String.IsNullOrEmpty(tier) ? "%" : "%" + tier + "%";
+            string _subtier = String.IsNullOrEmpty(subtier) ? "%" : subtier;
+
+            // TODO: Add search by count = NULL
+            //var searchString = "Name LIKE '" + _name + "' AND City LIKE '" + _city + "' AND County LIKE '" + _county + "' AND TierAndRating LIKE '" + _tier + "' AND SubTier LIKE '" + _subtier + "' AND Checked LIKE 'OK'";
+            var searchString = "Name LIKE '" + _name + "' AND City LIKE '" + _city + "' AND TierAndRating LIKE '" + _tier + "' AND SubTier LIKE '" + _subtier + "' AND Checked LIKE 'OK'";
+            return SearchOrganisations(searchString).ToJSON();
         }
 
         public string GetOrganisationsByName(string name)
         {
-            string search = "Name LIKE '%" + name + "%' AND Checked LIKE 'OK'";
-            return SearchOrganisations(search).ToJSON();
+            var searchString = "Name LIKE '%" + name + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(searchString).ToJSON();
         }
 
         public string GetOrganisationsByCity(string city)
         {
-            string search = "City LIKE '%" + city + "%' AND Checked LIKE 'OK'";
-            return SearchOrganisations(search).ToJSON();
+            var searchString = "City LIKE '%" + city + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(searchString).ToJSON();
         }
     }
 }

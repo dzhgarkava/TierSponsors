@@ -32,7 +32,11 @@
   <xs:element name="GetOrganisations">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="query" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="county" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tier" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subtier" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -54,6 +58,20 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="GetOrganisationsByNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganisationsByCity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganisationsByCityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetOrganisationsByCityResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
