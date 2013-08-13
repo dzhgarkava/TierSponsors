@@ -31,6 +31,10 @@ namespace TierSponsors_Service
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
         string GetOrganisationsByCity(string city);
 
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        string GetOrganisationsByTier(string tier);
+
         // TODO: Add your service operations here
     }
 

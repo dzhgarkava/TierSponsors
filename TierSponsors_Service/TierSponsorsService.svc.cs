@@ -88,5 +88,11 @@ namespace TierSponsors_Service
             var searchString = "City LIKE '%" + city + "%' AND Checked LIKE 'OK'";
             return SearchOrganisations(searchString).ToJSON();
         }
+
+        public string GetOrganisationsByTier(string tier)
+        {
+            var searchString = "TierAndRating LIKE '%" + tier + "%' AND Checked LIKE 'OK'";
+            return SearchOrganisations(searchString).ToJSON();
+        }
     }
 }
