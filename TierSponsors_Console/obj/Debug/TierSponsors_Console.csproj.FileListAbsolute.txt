@@ -1,0 +1,17 @@
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe.config
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsors_Console\bin\Debug\TierSponsors_Console.pdb
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsors_Console\obj\Debug\TierSponsors_Console.exe
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsors_Console\obj\Debug\TierSponsors_Console.pdb
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe.config
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.exe
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.pdb
+D:\_projects\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe.config
+D:\_projects\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.exe
+D:\_projects\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.pdb
+D:\_projects\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe
+D:\_projects\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.pdb
+D:\_projects\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.csprojResolveAssemblyReference.cache
+D:\git\TierSponsors\TierSponsors_Console\bin\Debug\TierSponsors_Console.exe.config
+D:\git\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.exe
+D:\git\TierSponsors\TierSponsors_Console\obj\Debug\TierSponsors_Console.pdb

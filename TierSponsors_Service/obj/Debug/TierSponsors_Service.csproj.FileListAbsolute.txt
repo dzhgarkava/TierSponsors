@@ -1,0 +1,13 @@
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsorsService\bin\TierSponsorsService.dll
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsorsService\bin\TierSponsorsService.pdb
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsorsService\obj\Debug\TierSponsorsService.dll
+c:\users\gdzhgarkava\documents\visual studio 2012\Projects\TierSponsorsService\TierSponsorsService\obj\Debug\TierSponsorsService.pdb
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsorsService\bin\TierSponsors_Service.dll
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsorsService\bin\TierSponsors_Service.pdb
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsorsService\obj\Debug\TierSponsors_Service.dll
+C:\Users\GDzhgarkava\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsorsService\obj\Debug\TierSponsors_Service.pdb
+D:\_projects\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.csprojResolveAssemblyReference.cache
+D:\_projects\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.dll
+D:\_projects\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.dll
+D:\_projects\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.pdb
+D:\_projects\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.pdb

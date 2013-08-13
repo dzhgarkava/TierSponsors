@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b0ca3720-9322-44f1-9119-5c3caeaa28b0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6352/TierSponsorsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TierSponsorsService.xsd" MetadataType="Schema" ID="43cb037f-4e29-4bfd-90f2-ffb12c2368ba" SourceId="1" SourceUrl="http://localhost:6352/TierSponsorsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TierSponsorsService.wsdl" MetadataType="Wsdl" ID="077fe3db-e0fd-4eae-a156-22013f3cd740" SourceId="1" SourceUrl="http://localhost:6352/TierSponsorsService.svc?wsdl" />
+    <MetadataFile FileName="TierSponsorsService1.xsd" MetadataType="Schema" ID="03688167-9a4d-46e3-a1a9-4bd8bef9cc9c" SourceId="1" SourceUrl="http://localhost:6352/TierSponsorsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TierSponsorsService2.xsd" MetadataType="Schema" ID="0c074d88-2e3c-4b94-b30b-4bfcd961e374" SourceId="1" SourceUrl="http://localhost:6352/TierSponsorsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TierSponsorsService.disco" MetadataType="Disco" ID="b1a7b18d-f7ff-4fab-9892-43a15532d2a5" SourceId="1" SourceUrl="http://localhost:6352/TierSponsorsService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
