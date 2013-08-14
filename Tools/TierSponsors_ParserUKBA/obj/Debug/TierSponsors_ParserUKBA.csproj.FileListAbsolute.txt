@@ -1,0 +1,11 @@
+D:\git\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.exe
+D:\git\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\Interop.PDFCreatorPilotLib.dll
+D:\git\TierSponsors\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.exe
+D:\git\TierSponsors\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.exe
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.exe
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\Interop.PDFCreatorPilotLib.dll
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.csprojResolveAssemblyReference.cache

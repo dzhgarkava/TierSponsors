@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{BD2DE6B8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TierSponsors_MigrateDB", "Tools\TierSponsors_MigrateDB\TierSponsors_MigrateDB.csproj", "{5DE1FD2F-097F-4113-92D5-3E58AD951688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TierSponsors_ParserUKBA", "TierSponsors_ParserUKBA\TierSponsors_ParserUKBA.csproj", "{DB22B339-E228-4FED-88D7-35E2CA1C2F67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TierSponsors_ParserUKBA", "Tools\TierSponsors_ParserUKBA\TierSponsors_ParserUKBA.csproj", "{DB22B339-E228-4FED-88D7-35E2CA1C2F67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
