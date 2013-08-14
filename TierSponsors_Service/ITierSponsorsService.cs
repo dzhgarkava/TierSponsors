@@ -14,12 +14,6 @@ namespace TierSponsors_Service
     {
 
         [OperationContract]
-        string GetData(int value);
-
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
         string GetOrganisations(string name, string city, string county, string tier, string subtier);
 
@@ -43,27 +37,7 @@ namespace TierSponsors_Service
 
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
-    }
-
+    
     [DataContract]
     public class OrganisationsCollection
     {
