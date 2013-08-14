@@ -65,15 +65,15 @@ namespace TierSponsors_Service
 
         public string GetOrganisations(string name, string city, string county, string tier, string subtier)
         {
-            string _name = String.IsNullOrEmpty(name) ? "%" : "%" + name + "%";
-            string _city = String.IsNullOrEmpty(city) ? "%" : "%" + city + "%";
-            string _county = String.IsNullOrEmpty(county) ? "%" : "%" + county + "%";
-            string _tier = String.IsNullOrEmpty(tier) ? "%" : "%" + tier + "%";
-            string _subtier = String.IsNullOrEmpty(subtier) ? "%" : subtier;
+            var sName = String.IsNullOrEmpty(name) ? "%" : "%" + name + "%";
+            var sCity = String.IsNullOrEmpty(city) ? "%" : "%" + city + "%";
+            var sCounty = String.IsNullOrEmpty(county) ? "%" : "%" + county + "%";
+            var sTier = String.IsNullOrEmpty(tier) ? "%" : "%" + tier + "%";
+            var sSubtier = String.IsNullOrEmpty(subtier) ? "%" : subtier;
 
             // TODO: Add search by count = NULL
             //var searchString = "Name LIKE '" + _name + "' AND City LIKE '" + _city + "' AND County LIKE '" + _county + "' AND TierAndRating LIKE '" + _tier + "' AND SubTier LIKE '" + _subtier + "' AND Checked LIKE 'OK'";
-            var searchString = "Name LIKE '" + _name + "' AND City LIKE '" + _city + "' AND TierAndRating LIKE '" + _tier + "' AND SubTier LIKE '" + _subtier + "' AND Checked LIKE 'OK'";
+            var searchString = "Name LIKE '" + sName + "' AND City LIKE '" + sCity + "' AND TierAndRating LIKE '" + sTier + "' AND SubTier LIKE '" + sSubtier + "' AND Checked LIKE 'OK'";
             return SearchOrganisations(searchString).ToJSON();
         }
 
