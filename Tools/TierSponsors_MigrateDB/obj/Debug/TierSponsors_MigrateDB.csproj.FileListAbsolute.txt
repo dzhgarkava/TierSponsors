@@ -1,0 +1,5 @@
+D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe
+D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.pdb
+D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.csprojResolveAssemblyReference.cache
+D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.exe
+D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.pdb

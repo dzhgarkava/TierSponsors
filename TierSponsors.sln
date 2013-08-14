@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TierSponsors_Console", "Tie
 		{05CBA9DA-F09F-4D27-B7E5-4EF3DF2BE05F} = {05CBA9DA-F09F-4D27-B7E5-4EF3DF2BE05F}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{BD2DE6B8-3991-4CD4-BF36-270FE39FFE63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TierSponsors_MigrateDB", "Tools\TierSponsors_MigrateDB\TierSponsors_MigrateDB.csproj", "{5DE1FD2F-097F-4113-92D5-3E58AD951688}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,8 +26,15 @@ Global
 		{3FB2D2B8-D984-4ABE-BE0F-F0CD24674FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB2D2B8-D984-4ABE-BE0F-F0CD24674FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB2D2B8-D984-4ABE-BE0F-F0CD24674FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE1FD2F-097F-4113-92D5-3E58AD951688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE1FD2F-097F-4113-92D5-3E58AD951688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE1FD2F-097F-4113-92D5-3E58AD951688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE1FD2F-097F-4113-92D5-3E58AD951688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DE1FD2F-097F-4113-92D5-3E58AD951688} = {BD2DE6B8-3991-4CD4-BF36-270FE39FFE63}
 	EndGlobalSection
 EndGlobal
