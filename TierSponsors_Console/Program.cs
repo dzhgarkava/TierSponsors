@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
 using System.Text;
-using TierSponsors_Console.srTierSponsorsService; 
+using TierSponsors_Console.wrTierSponsorsService;
 
 namespace TierSponsors_Console
 {
@@ -12,8 +12,8 @@ namespace TierSponsors_Console
     {
         static void Main(string[] args)
         {
-            var clientTierSponsorsServiceClient = new TierSponsorsServiceClient();
-            string jsonString = clientTierSponsorsServiceClient.GetOrganisations("london", "", "", "Tier 2", "");
+            TierSponsorsServiceClient client = new TierSponsorsServiceClient();
+            var jsonString = client.GetOrganisationsByName("Liverpool");
 
             byte[] byteArray = Encoding.Unicode.GetBytes(jsonString);
             MemoryStream stream = new MemoryStream(byteArray);

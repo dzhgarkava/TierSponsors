@@ -1,0 +1,4 @@
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Service\obj\Release\TierSponsors_Service.dll
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Service\obj\Release\TierSponsors_Service.pdb

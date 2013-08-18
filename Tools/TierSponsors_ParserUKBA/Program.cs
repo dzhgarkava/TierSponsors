@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using PDFCreatorPilotLib;
+
 
 namespace TierSponsors_ParserUKBA
 {
@@ -11,22 +11,23 @@ namespace TierSponsors_ParserUKBA
         private const string PathToFile = "pbsregisterofsponsors_tier2.pdf";
         static void Main()
         {
-            var pdfDocument4 = new PDFDocument4Class();
-            pdfDocument4.Open(PathToFile, "");
-            int pagecount = pdfDocument4.GetPageCount();
+            // Перепивать на работу с текстовым файлом
+            //var pdfDocument4 = new PDFDocument4Class();
+            //pdfDocument4.Open(PathToFile, "");
+            //int pagecount = pdfDocument4.GetPageCount();
 
             var block = new List<String>();
 
-            for (int i = 0; i < pagecount; i++)
-            {
-                string page = pdfDocument4.GetPageText(i);
-                int pos;
-                while ((pos = page.IndexOf("\r\n", StringComparison.Ordinal)) != -1)
-                {
-                    block.Add(page.Remove(pos));
-                    page = page.Remove(0, pos + 2);
-                }
-            }
+            //for (int i = 0; i < pagecount; i++)
+            //{
+            //    string page = pdfDocument4.GetPageText(i);
+            //    int pos;
+            //    while ((pos = page.IndexOf("\r\n", StringComparison.Ordinal)) != -1)
+            //    {
+            //        block.Add(page.Remove(pos));
+            //        page = page.Remove(0, pos + 2);
+            //    }
+            //}
 
             while (block[0].IndexOf("Organisation Name Town/City County Tier & Rating Sub Tier", StringComparison.Ordinal) == -1)
             {

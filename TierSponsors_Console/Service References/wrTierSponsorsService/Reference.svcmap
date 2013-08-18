@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0269e940-6125-44ec-8e18-c3afaccb3975" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://tiersponsors.co.uk/webservice/TierSponsorsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TierSponsorsService.xsd" MetadataType="Schema" ID="7f3e8ad6-f270-4d55-be55-5883d87156f2" SourceId="1" SourceUrl="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TierSponsorsService1.xsd" MetadataType="Schema" ID="e83ce729-c9b8-4252-aa95-cbdb526ee0ba" SourceId="1" SourceUrl="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TierSponsorsService.wsdl" MetadataType="Wsdl" ID="41d5fcf9-10a6-4c05-bf82-369b1680fb32" SourceId="1" SourceUrl="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc?wsdl" />
+    <MetadataFile FileName="TierSponsorsService.disco" MetadataType="Disco" ID="1976d951-7c9f-42e8-b529-a337214f2165" SourceId="1" SourceUrl="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

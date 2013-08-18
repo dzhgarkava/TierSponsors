@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TierSponsorsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITierSponsorsService_GetOrganisations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisations" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByName" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByCity" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByTier_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByTier" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsByTier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsByTierResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsBySubTier_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsBySubTier" />
+  </wsdl:message>
+  <wsdl:message name="ITierSponsorsService_GetOrganisationsBySubTier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganisationsBySubTierResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITierSponsorsService">
+    <wsdl:operation name="GetOrganisations">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisations" message="tns:ITierSponsorsService_GetOrganisations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsResponse" message="tns:ITierSponsorsService_GetOrganisations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByName" message="tns:ITierSponsorsService_GetOrganisationsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByNameResponse" message="tns:ITierSponsorsService_GetOrganisationsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCity" message="tns:ITierSponsorsService_GetOrganisationsByCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCityResponse" message="tns:ITierSponsorsService_GetOrganisationsByCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByTier">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByTier" message="tns:ITierSponsorsService_GetOrganisationsByTier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsByTierResponse" message="tns:ITierSponsorsService_GetOrganisationsByTier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsBySubTier">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsBySubTier" message="tns:ITierSponsorsService_GetOrganisationsBySubTier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITierSponsorsService/GetOrganisationsBySubTierResponse" message="tns:ITierSponsorsService_GetOrganisationsBySubTier_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITierSponsorsService" type="tns:ITierSponsorsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOrganisations">
+      <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByName">
+      <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByCity">
+      <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsByTier">
+      <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsByTier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganisationsBySubTier">
+      <soap:operation soapAction="http://tempuri.org/ITierSponsorsService/GetOrganisationsBySubTier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TierSponsorsService">
+    <wsdl:port name="BasicHttpBinding_ITierSponsorsService" binding="tns:BasicHttpBinding_ITierSponsorsService">
+      <soap:address location="http://tiersponsors.co.uk/WebService/TierSponsorsService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -19,12 +19,12 @@ namespace TierSponsors_Service
                 OrgList = new List<Organisation>()
             };
 
-            var connectionString = ConfigurationManager.ConnectionStrings["DB_ConnectionString"].ConnectionString;
+            var connectionString = ConfigurationManager.ConnectionStrings["PARKING_ConnectionString"].ConnectionString;
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
 
-                var da = new SqlDataAdapter("select * from test_ilawiuk.dbo.tdMain", connectionString);
+                var da = new SqlDataAdapter("select * from yourtown_20.dbo.Organisations", connectionString);
                 var ds = new DataSet();
                 da.Fill(ds);
 
@@ -55,7 +55,7 @@ namespace TierSponsors_Service
 
             // TODO: Add search by count = NULL
             //var searchString = "Name LIKE '" + _name + "' AND City LIKE '" + _city + "' AND County LIKE '" + _county + "' AND TierAndRating LIKE '" + _tier + "' AND SubTier LIKE '" + _subtier + "' AND Checked LIKE 'OK'";
-            var searchString = "Name LIKE '" + sName + "' AND City LIKE '" + sCity + "' AND TierAndRating LIKE '" + sTier + "' AND SubTier LIKE '" + sSubtier + "' AND Checked LIKE 'OK'";
+            var searchString = "Name LIKE '" + sName + "' AND City LIKE '" + sCity + "' AND TierRatingSubTier LIKE '" + sTier + ";" + sSubtier + "' AND Checked LIKE 'OK'";
             return SearchOrganisations(searchString).ToJSON();
         }
 
@@ -73,7 +73,7 @@ namespace TierSponsors_Service
 
         public string GetOrganisationsByTier(string tier)
         {
-            var searchString = "TierAndRating LIKE '%" + tier + "%' AND Checked LIKE 'OK'";
+            var searchString = "TierRatingSubTier LIKE '%" + tier + "%' AND Checked LIKE 'OK'";
             return SearchOrganisations(searchString).ToJSON();
         }
 

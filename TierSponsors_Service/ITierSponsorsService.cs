@@ -12,7 +12,6 @@ namespace TierSponsors_Service
     [ServiceContract]
     public interface ITierSponsorsService
     {
-
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
         string GetOrganisations(string name, string city, string county, string tier, string subtier);

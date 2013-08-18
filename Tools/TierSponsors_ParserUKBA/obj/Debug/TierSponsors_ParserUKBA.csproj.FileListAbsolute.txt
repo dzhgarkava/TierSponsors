@@ -9,3 +9,7 @@ D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserU
 D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.pdb
 D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\Interop.PDFCreatorPilotLib.dll
 D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.exe
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.exe
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.pdb

@@ -1,0 +1,5 @@
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\bin\Release\TierSponsors_Console.exe.config
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\bin\Release\TierSponsors_Console.exe
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\bin\Release\TierSponsors_Console.pdb
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\obj\Release\TierSponsors_Console.exe
+\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\TierSponsors_Console\obj\Release\TierSponsors_Console.pdb
