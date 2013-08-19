@@ -12,35 +12,16 @@
       <param name="owner">The <see cref="T:System.Windows.Controls.DescriptionViewer" /> to associate with this <see cref="T:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer" />.</param>
     </member>
     <member name="M:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer.GetAutomationControlTypeCore">
-      <summary>Gets the control type for the element associated with this <see cref="T:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+      <summary>Gets the control type for this <see cref="T:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
       <returns>The control type as a value of the enumeration.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer.GetClassNameCore">
       <summary>Gets the name of the class that is associated with this <see cref="T:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
-      <returns>The class name.</returns>
+      <returns>The type name of the <paramref name="owner" /> value that the automation peer is constructed with.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer.GetNameCore">
-      <summary>Gets the UI Automation Name of the element that is associated with this <see cref="T:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
-      <returns>The UI Automation Name from the owner control. </returns>
-    </member>
-    <member name="T:System.Windows.Automation.Peers.LabelAutomationPeer">
-      <summary>Exposes <see cref="T:System.Windows.Controls.Label" /> types to UI automation.</summary>
-    </member>
-    <member name="M:System.Windows.Automation.Peers.LabelAutomationPeer.#ctor(System.Windows.Controls.Label)">
-      <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> class.</summary>
-      <param name="owner">The <see cref="T:System.Windows.Controls.Label" /> to associate with the <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" />.</param>
-    </member>
-    <member name="M:System.Windows.Automation.Peers.LabelAutomationPeer.GetAutomationControlTypeCore">
-      <summary>Gets the control type for the element that is associated with this <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
-      <returns>A value of the enumeration.</returns>
-    </member>
-    <member name="M:System.Windows.Automation.Peers.LabelAutomationPeer.GetClassNameCore">
-      <summary>Gets the name of the class associated with this <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
-      <returns>The class name.</returns>
-    </member>
-    <member name="M:System.Windows.Automation.Peers.LabelAutomationPeer.GetNameCore">
-      <summary>Gets the UI Automation Name of the element that is associated with this <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
-      <returns>The UI Automation Nameof the element that is associated with this automation peer.</returns>
+      <summary>Gets the text label of the <see cref="T:System.Windows.Controls.DescriptionViewer" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.DescriptionViewerAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
+      <returns>The string name value from the owner control's <see cref="P:System.Windows.Controls.DescriptionViewer.Description" /> property if available.</returns>
     </member>
     <member name="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer">
       <summary>Exposes <see cref="T:System.Windows.Controls.ValidationSummary" /> types to UI automation.</summary>
@@ -54,15 +35,15 @@
       <returns>A value of the enumeration.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.GetClassNameCore">
-      <summary>Gets the name of the class associated with this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
-      <returns>The class name.</returns>
+      <summary>Gets the name of the class for the object associated with this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+      <returns>The string ValidationSummary.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.GetNameCore">
-      <summary>Gets the UI Automation Name of the <see cref="T:System.Windows.Controls.ValidationSummary" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
-      <returns>The UI Automation Name</returns>
+      <summary>Gets the text label of the <see cref="T:System.Windows.Controls.ValidationSummary" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
+      <returns>The string name value from the owner control's header if available. Otherwise, calls base.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
-      <summary>Gets an object that supports the requested pattern, based on the patterns supported by this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />.</summary>
+      <summary>Gets the control pattern for this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />.</summary>
       <returns>The object that implements the pattern interface, or null if the specified pattern interface is not implemented by this peer.</returns>
       <param name="patternInterface">One of the enumeration values.</param>
     </member>
@@ -190,10 +171,6 @@
       <summary>Called when the value of the <see cref="P:System.Windows.Controls.ContentControl.Content" /> property changes.</summary>
       <param name="oldContent">The old value of the <see cref="P:System.Windows.Controls.ContentControl.Content" /> property.</param>
       <param name="newContent">The new value of the <see cref="P:System.Windows.Controls.ContentControl.Content" /> property.</param>
-    </member>
-    <member name="M:System.Windows.Controls.Label.OnCreateAutomationPeer">
-      <summary>Returns a <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for use by the Silverlight automation infrastructure.</summary>
-      <returns>A <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the <see cref="T:System.Windows.Controls.Label" /> object.</returns>
     </member>
     <member name="P:System.Windows.Controls.Label.PropertyPath">
       <summary>Gets or sets the path to the dependency property on the <see cref="P:System.Windows.FrameworkElement.DataContext" /> of the <see cref="P:System.Windows.Controls.Label.Target" /> control that this <see cref="T:System.Windows.Controls.Label" /> is associated with.</summary>

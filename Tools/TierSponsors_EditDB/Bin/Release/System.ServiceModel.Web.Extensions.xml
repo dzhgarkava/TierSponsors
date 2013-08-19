@@ -97,7 +97,7 @@
       <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebHttpBehavior" /> class.</summary>
     </member>
     <member name="M:System.ServiceModel.Description.WebHttpBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)">
-      <summary>This method is not used in Silverlight 5.</summary>
+      <summary>This method is not used in Silverlight version 4 Release Candidate.</summary>
       <param name="endpoint">The service endpoint to be accessed.</param>
       <param name="bindingParameters">The binding parameters that support modifying the bindings.</param>
     </member>
@@ -113,7 +113,7 @@
       <exception cref="T:System.ArgumentNullException">Either the <paramref name="endpoint" /> of the <paramref name="clientRuntime" /> is null.</exception>
     </member>
     <member name="M:System.ServiceModel.Description.WebHttpBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)">
-      <summary>This method is not used in Silverlight 5.</summary>
+      <summary>This method is not used in Silverlight version 4 Release Candidate.</summary>
       <param name="endpoint">The endpoint that exposes the contract.</param>
       <param name="endpointDispatcher">The endpoint dispatcher to which the behavior is applied.</param>
     </member>

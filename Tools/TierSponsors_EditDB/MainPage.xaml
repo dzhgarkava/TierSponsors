@@ -8,10 +8,11 @@
     d:DesignHeight="400" d:DesignWidth="800">
 
     <Grid x:Name="LayoutRoot" Background="White">
-        <ListBox Name="lbxOrganisations" HorizontalAlignment="Left" Height="280" Margin="10,10,0,0" VerticalAlignment="Top" Width="405"/>
+        <ListBox Name="lbxOrganisations" HorizontalAlignment="Left" Height="280" Margin="10,10,0,0" VerticalAlignment="Top" Width="405" MouseLeftButtonDown="LbxOrganisations_OnMouseLeftButtonDown" SelectionChanged="LbxOrganisations_OnSelectionChanged"/>
         <TextBox Name="txtID" HorizontalAlignment="Left" Height="23" Margin="420,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="370" TextChanged="txtID_OnTextChanged"/>
         <TextBox Name="txtNameCityCounty" HorizontalAlignment="Left" Height="23" Margin="420,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="370"/>
         <TextBox Name="txtCity" HorizontalAlignment="Left" Height="23" Margin="420,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="370"/>
         <TextBox Name="txtCounty" HorizontalAlignment="Left" Height="23" Margin="420,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="370"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="340,295,0,0" VerticalAlignment="Top" Width="75" Name="btnLoad" Click="btnLoad_Click"/>
     </Grid>
 </UserControl>

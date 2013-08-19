@@ -1,17 +1,17 @@
 ﻿<configuration>
-  <system.serviceModel>
-    <bindings>
-      <customBinding>
-        <binding name="CustomBinding_ServiceEditDB_SL">
-          <binaryMessageEncoding />
-          <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
-        </binding>
-      </customBinding>
-    </bindings>
-    <client>
-      <endpoint address="http://localhost:3750/ServiceEditDB_SL.svc"
-        binding="customBinding" bindingConfiguration="CustomBinding_ServiceEditDB_SL"
-        contract="srEditDB_SL.ServiceEditDB_SL" name="CustomBinding_ServiceEditDB_SL" />
-    </client>
-  </system.serviceModel>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_ServiceEditDB_SL">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:3750/ServiceEditDB_SL.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_ServiceEditDB_SL"
+                contract="srEditDB_SL.ServiceEditDB_SL" name="CustomBinding_ServiceEditDB_SL" />
+        </client>
+    </system.serviceModel>
 </configuration>

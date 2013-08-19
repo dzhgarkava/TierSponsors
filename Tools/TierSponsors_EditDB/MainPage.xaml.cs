@@ -20,9 +20,7 @@ namespace TierSponsors_EditDB
         {
             InitializeComponent();
 
-            ServiceEditDB_SLClient client = new ServiceEditDB_SLClient();
-            client.GetOrganisationsCompleted += client_GetOrganisationsCompleted;
-            client.GetOrganisationsAsync(true);
+           
         }
 
         void client_GetOrganisationsCompleted(object sender, GetOrganisationsCompletedEventArgs e)
@@ -40,9 +38,7 @@ namespace TierSponsors_EditDB
 
         void item_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            ServiceEditDB_SLClient client = new ServiceEditDB_SLClient();
-            client.GetOrganisationByIDCompleted += client_GetOrganisationByIDCompleted;
-            client.GetOrganisationByIDAsync(sender.ToString());
+            
         }
 
         void client_GetOrganisationByIDCompleted(object sender, GetOrganisationByIDCompletedEventArgs e)
@@ -56,6 +52,28 @@ namespace TierSponsors_EditDB
         private void txtID_OnTextChanged(object sender, TextChangedEventArgs e)
         {
            // btnSave.IsEnabled = !String.IsNullOrEmpty(txtID.Text);
+        }
+
+        private void LbxOrganisations_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            ServiceEditDB_SLClient client = new ServiceEditDB_SLClient();
+            client.GetOrganisationByIDCompleted += client_GetOrganisationByIDCompleted;
+            client.GetOrganisationByIDAsync(sender.ToString());
+        }
+
+        private void btnLoad_Click(object sender, RoutedEventArgs e)
+        {
+            ServiceEditDB_SLClient client = new ServiceEditDB_SLClient();
+            client.GetOrganisationsCompleted += client_GetOrganisationsCompleted;
+            client.GetOrganisationsAsync(true);
+        }
+
+        private void LbxOrganisations_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ServiceEditDB_SLClient client = new ServiceEditDB_SLClient();
+            client.GetOrganisationByIDCompleted += client_GetOrganisationByIDCompleted;
+            string id = ((ListBox) sender).SelectedItem.ToString();
+            client.GetOrganisationByIDAsync(id);
         }
     }
 }

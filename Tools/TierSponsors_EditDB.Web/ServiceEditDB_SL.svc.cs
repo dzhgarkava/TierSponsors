@@ -15,9 +15,14 @@ namespace TierSponsors_EditDB.Web
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class ServiceEditDB_SL
     {
-        const string sDataBaseName = "TierSponsors_DB";
-        //const string sDataBaseName = "yourtown_20"; // Use it for parking database
-        readonly string _connectionString = ConfigurationManager.ConnectionStrings["TS_ConnectionString"].ConnectionString;
+        // Use it for technoserv database
+        //private const string DataBaseName = "TierSponsors_DB";
+        //readonly string _connectionString = ConfigurationManager.ConnectionStrings["TS_ConnectionString"].ConnectionString;
+
+        // Use it for parking database
+        private const string DataBaseName = "yourtown_20"; 
+        readonly string _connectionString = ConfigurationManager.ConnectionStrings["PARKING_ConnectionString"].ConnectionString;
+        
 
         [OperationContract]
         public OrganisationsCollection GetOrganisations(bool Checked)
@@ -31,7 +36,7 @@ namespace TierSponsors_EditDB.Web
             {
                 connection.Open();
 
-                var da = new SqlDataAdapter("select * from " + sDataBaseName + ".dbo.Organisations", _connectionString);
+                var da = new SqlDataAdapter("select TOP 100 * from " + DataBaseName + ".dbo.Organisations", _connectionString);
                 var ds = new DataSet();
                 da.Fill(ds);
 
@@ -61,7 +66,7 @@ namespace TierSponsors_EditDB.Web
             {
                 connection.Open();
 
-                var da = new SqlDataAdapter("select * from " + sDataBaseName + ".dbo.Organisations", _connectionString);
+                var da = new SqlDataAdapter("select TOP 100 * from " + DataBaseName + ".dbo.Organisations", _connectionString);
                 var ds = new DataSet();
                 da.Fill(ds);
 
@@ -76,6 +81,7 @@ namespace TierSponsors_EditDB.Web
                         Name = dr[0]["Name"].ToString(),
                         City = dr[0]["City"].ToString(),
                         County = dr[0]["County"].ToString(),
+                        NameCityCounty = dr[0]["NameCityCounty"].ToString()
                     }
                     : null;
             }
