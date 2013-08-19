@@ -20,15 +20,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:3750/ServiceEditDB_SL.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceEditDB_SL.xsd" MetadataType="Schema" ID="93a796e6-5e28-488e-9dfa-f5929f7ed68c" SourceId="1" SourceUrl="http://localhost:3750/ServiceEditDB_SL.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceEditDB_SL.disco" MetadataType="Disco" ID="63dfcc73-5cde-4adb-a621-cb9442e8c1a9" SourceId="1" SourceUrl="http://localhost:3750/ServiceEditDB_SL.svc?disco" />
-    <MetadataFile FileName="ServiceEditDB_SL.wsdl" MetadataType="Wsdl" ID="ef4d198f-aca2-4e1e-a03c-0d80e580bdd2" SourceId="1" SourceUrl="http://localhost:3750/ServiceEditDB_SL.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="ServiceEditDB_SL1.wsdl" MetadataType="Wsdl" ID="0adbc43e-6b98-4576-ba84-9c1d1a9d686c" SourceId="1" SourceUrl="http://localhost:3750/ServiceEditDB_SL.svc?wsdl" />
-    <MetadataFile FileName="ServiceEditDB_SL1.xsd" MetadataType="Schema" ID="daa98ac2-1a24-44ea-81d0-10456d2f987b" SourceId="1" SourceUrl="http://localhost:3750/ServiceEditDB_SL.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceEditDB_SL2.xsd" MetadataType="Schema" ID="8495086c-ae61-4e8b-a973-a2f5db9fc341" SourceId="1" SourceUrl="http://localhost:3750/ServiceEditDB_SL.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceEditDB_SL3.xsd" MetadataType="Schema" ID="8d0cc460-3d18-4147-9b25-2d07e1ea286b" SourceId="1" SourceUrl="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceEditDB_SL2.wsdl" MetadataType="Wsdl" ID="2dc629df-501c-410e-b975-7f7b1b52d386" SourceId="1" SourceUrl="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ServiceEditDB_SL31.xsd" MetadataType="Schema" ID="c2f759b2-cc85-457f-8969-9fabf72eb633" SourceId="1" SourceUrl="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceEditDB_SL32.xsd" MetadataType="Schema" ID="633ec37d-a77c-47e1-8baa-0dea3d935c1f" SourceId="1" SourceUrl="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceEditDB_SL21.wsdl" MetadataType="Wsdl" ID="f5dc7d82-b489-45a6-a5a2-4b2c4d0be4c2" SourceId="1" SourceUrl="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc?wsdl" />
+    <MetadataFile FileName="ServiceEditDB_SL1.disco" MetadataType="Disco" ID="21088554-519b-4402-be4b-805875e67486" SourceId="1" SourceUrl="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

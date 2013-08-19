@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATy55Jo2IpEGvYyB5sru1QAAAAAACAAAAAAAQZgAAAAEAACAAAABG6tBR2FWGNY2wRiIDJuN9ANnkkQc1u/qPPaD3cHFK5wAAAAAOgAAAAAIAACAAAAAj5+/Nzu5jEEips5RILkjxt6kFPb8sGkRphon62rzDiyAAAAC/ucUMZXiSdJkZHnzLPYaG897dSm7hwvBp3D4SO1+sCkAAAAAriKbi2cLwclddXq3MUehWRX4LgMEcjW+LQZfK2dIdcQMwBdq5rYXoC7DVb5NjjM+ZiGiRp6FtUiZg2Ao+DKXG</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/TierSponsors_EditDB.Web.dll">
+      <publishTime>08/19/2013 23:36:54</publishTime>
+    </File>
+    <File Include="ClientBin/TierSponsors_EditDB.xap">
+      <publishTime>08/19/2013 23:36:57</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/19/2013 21:34:09</publishTime>
+    </File>
+    <File Include="Default.html">
+      <publishTime>08/19/2013 21:34:09</publishTime>
+    </File>
+    <File Include="ServiceEditDB_SL.svc">
+      <publishTime>08/19/2013 21:34:09</publishTime>
+    </File>
+    <File Include="Silverlight.js">
+      <publishTime>08/19/2013 21:34:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/19/2013 23:37:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

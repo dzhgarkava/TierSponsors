@@ -1,8 +1,3 @@
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe.config
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.pdb
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.exe
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.pdb
 D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe.config
 D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe
 D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.pdb

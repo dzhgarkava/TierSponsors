@@ -114,15 +114,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
-    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL.wsdl" />
-    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL.xsd">
+    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL2.wsdl" />
+    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL21.wsdl" />
+    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL1.wsdl" />
-    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL1.xsd">
+    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL31.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL2.xsd">
+    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL32.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\srEditDB_SL\TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SLOrganisation.datasource">
@@ -131,6 +131,7 @@
     <None Include="Service References\srEditDB_SL\TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SLOrganisationsCollection.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL1.disco" />
     <Content Include="ServiceReferences.ClientConfig" />
   </ItemGroup>
   <ItemGroup>
@@ -138,9 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\srEditDB_SL\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\srEditDB_SL\ServiceEditDB_SL.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\srEditDB_SL\configuration91.svcinfo" />

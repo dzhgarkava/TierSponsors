@@ -148,6 +148,11 @@ namespace TierSponsors_EditDB.srEditDB_SL {
         System.IAsyncResult BeginGetOrganisationByID(string ID, System.AsyncCallback callback, object asyncState);
         
         TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SLOrganisation EndGetOrganisationByID(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:ServiceEditDB_SL/SetOrganisationByID", ReplyAction="urn:ServiceEditDB_SL/SetOrganisationByIDResponse")]
+        System.IAsyncResult BeginSetOrganisationByID(string ID, string Name, string City, string County, string NameCityCounty, string Checked, System.AsyncCallback callback, object asyncState);
+        
+        void EndSetOrganisationByID(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -208,6 +213,12 @@ namespace TierSponsors_EditDB.srEditDB_SL {
         
         private System.Threading.SendOrPostCallback onGetOrganisationByIDCompletedDelegate;
         
+        private BeginOperationDelegate onBeginSetOrganisationByIDDelegate;
+        
+        private EndOperationDelegate onEndSetOrganisationByIDDelegate;
+        
+        private System.Threading.SendOrPostCallback onSetOrganisationByIDCompletedDelegate;
+        
         private BeginOperationDelegate onBeginOpenDelegate;
         
         private EndOperationDelegate onEndOpenDelegate;
@@ -264,6 +275,8 @@ namespace TierSponsors_EditDB.srEditDB_SL {
         public event System.EventHandler<GetOrganisationsCompletedEventArgs> GetOrganisationsCompleted;
         
         public event System.EventHandler<GetOrganisationByIDCompletedEventArgs> GetOrganisationByIDCompleted;
+        
+        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> SetOrganisationByIDCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -359,6 +372,61 @@ namespace TierSponsors_EditDB.srEditDB_SL {
             }
             base.InvokeAsync(this.onBeginGetOrganisationByIDDelegate, new object[] {
                         ID}, this.onEndGetOrganisationByIDDelegate, this.onGetOrganisationByIDCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SL.BeginSetOrganisationByID(string ID, string Name, string City, string County, string NameCityCounty, string Checked, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginSetOrganisationByID(ID, Name, City, County, NameCityCounty, Checked, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SL.EndSetOrganisationByID(System.IAsyncResult result) {
+            base.Channel.EndSetOrganisationByID(result);
+        }
+        
+        private System.IAsyncResult OnBeginSetOrganisationByID(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string ID = ((string)(inValues[0]));
+            string Name = ((string)(inValues[1]));
+            string City = ((string)(inValues[2]));
+            string County = ((string)(inValues[3]));
+            string NameCityCounty = ((string)(inValues[4]));
+            string Checked = ((string)(inValues[5]));
+            return ((TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SL)(this)).BeginSetOrganisationByID(ID, Name, City, County, NameCityCounty, Checked, callback, asyncState);
+        }
+        
+        private object[] OnEndSetOrganisationByID(System.IAsyncResult result) {
+            ((TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SL)(this)).EndSetOrganisationByID(result);
+            return null;
+        }
+        
+        private void OnSetOrganisationByIDCompleted(object state) {
+            if ((this.SetOrganisationByIDCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.SetOrganisationByIDCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void SetOrganisationByIDAsync(string ID, string Name, string City, string County, string NameCityCounty, string Checked) {
+            this.SetOrganisationByIDAsync(ID, Name, City, County, NameCityCounty, Checked, null);
+        }
+        
+        public void SetOrganisationByIDAsync(string ID, string Name, string City, string County, string NameCityCounty, string Checked, object userState) {
+            if ((this.onBeginSetOrganisationByIDDelegate == null)) {
+                this.onBeginSetOrganisationByIDDelegate = new BeginOperationDelegate(this.OnBeginSetOrganisationByID);
+            }
+            if ((this.onEndSetOrganisationByIDDelegate == null)) {
+                this.onEndSetOrganisationByIDDelegate = new EndOperationDelegate(this.OnEndSetOrganisationByID);
+            }
+            if ((this.onSetOrganisationByIDCompletedDelegate == null)) {
+                this.onSetOrganisationByIDCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnSetOrganisationByIDCompleted);
+            }
+            base.InvokeAsync(this.onBeginSetOrganisationByIDDelegate, new object[] {
+                        ID,
+                        Name,
+                        City,
+                        County,
+                        NameCityCounty,
+                        Checked}, this.onEndSetOrganisationByIDDelegate, this.onSetOrganisationByIDCompletedDelegate, userState);
         }
         
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
@@ -461,6 +529,23 @@ namespace TierSponsors_EditDB.srEditDB_SL {
                 object[] _args = new object[0];
                 TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SLOrganisation _result = ((TierSponsors_EditDB.srEditDB_SL.ServiceEditDB_SLOrganisation)(base.EndInvoke("GetOrganisationByID", _args, result)));
                 return _result;
+            }
+            
+            public System.IAsyncResult BeginSetOrganisationByID(string ID, string Name, string City, string County, string NameCityCounty, string Checked, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[6];
+                _args[0] = ID;
+                _args[1] = Name;
+                _args[2] = City;
+                _args[3] = County;
+                _args[4] = NameCityCounty;
+                _args[5] = Checked;
+                System.IAsyncResult _result = base.BeginInvoke("SetOrganisationByID", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public void EndSetOrganisationByID(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                base.EndInvoke("SetOrganisationByID", _args, result);
             }
         }
     }

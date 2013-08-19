@@ -9,7 +9,7 @@
             </customBinding>
         </bindings>
         <client>
-            <endpoint address="http://localhost:3750/ServiceEditDB_SL.svc"
+            <endpoint address="http://tiersponsors.co.uk/DataBaseEditor/ServiceEditDB_SL.svc"
                 binding="customBinding" bindingConfiguration="CustomBinding_ServiceEditDB_SL"
                 contract="srEditDB_SL.ServiceEditDB_SL" name="CustomBinding_ServiceEditDB_SL" />
         </client>

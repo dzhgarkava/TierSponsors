@@ -249,7 +249,6 @@ D:\git\TierSponsors\Tools\TierSponsors_EditDB\obj\Debug\TierSponsors_EditDB.cspr
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\Bin\Debug\vi\System.Windows.Controls.Data.Input.resources.dll
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\obj\Debug\TierSponsors_EditDB.csprojResolveAssemblyReference.cache
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\obj\Debug\App.g.cs
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\obj\Debug\MainPage.g.cs
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB\obj\Debug\TierSponsors_EditDB.g.resources
