@@ -1,0 +1,5 @@
+D:\git\TierSponsors\Tools\TierSponsors_EditDB.Web\bin\TierSponsors_EditDB.Web.dll
+D:\git\TierSponsors\Tools\TierSponsors_EditDB.Web\bin\TierSponsors_EditDB.Web.pdb
+D:\git\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.dll
+D:\git\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.pdb
+D:\git\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.csprojResolveAssemblyReference.cache

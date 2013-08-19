@@ -2,3 +2,8 @@
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Release\TierSponsors_ParserUKBA.pdb
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Release\TierSponsors_ParserUKBA.exe
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Release\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Release\TierSponsors_ParserUKBA.exe
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\bin\Release\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Release\TierSponsors_ParserUKBA.exe
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Release\TierSponsors_ParserUKBA.pdb
+D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Release\TierSponsors_ParserUKBA.csprojResolveAssemblyReference.cache

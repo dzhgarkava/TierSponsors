@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3750/ServiceEditDB_SL.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TierSponsors_EditDB.Web" />
+  <xs:element name="GetOrganisations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Checked" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganisationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TierSponsors_EditDB.Web" minOccurs="0" name="GetOrganisationsResult" nillable="true" type="q1:ServiceEditDB_SL.OrganisationsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganisationByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganisationByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TierSponsors_EditDB.Web" minOccurs="0" name="GetOrganisationByIDResult" nillable="true" type="q2:ServiceEditDB_SL.Organisation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
