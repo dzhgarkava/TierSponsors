@@ -8,3 +8,9 @@ D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Release\TierSponsors_Migrat
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Release\TierSponsors_MigrateDB.pdb
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Release\TierSponsors_MigrateDB.exe
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Release\TierSponsors_MigrateDB.pdb
+D:\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Release\TierSponsors_MigrateDB.exe.config
+D:\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Release\TierSponsors_MigrateDB.exe
+D:\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Release\TierSponsors_MigrateDB.pdb
+D:\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Release\TierSponsors_MigrateDB.csprojResolveAssemblyReference.cache
+D:\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Release\TierSponsors_MigrateDB.exe
+D:\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Release\TierSponsors_MigrateDB.pdb

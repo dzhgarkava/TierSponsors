@@ -1,2 +1,2 @@
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB
 Generated_Code\TierSponsors_EditDB.Web.g.cs

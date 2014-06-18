@@ -7,3 +7,9 @@ D:\git\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditD
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB.Web\bin\TierSponsors_EditDB.Web.pdb
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.dll
 \\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.pdb
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\bin\TierSponsors_EditDB.Web.dll.config
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\bin\TierSponsors_EditDB.Web.dll
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\bin\TierSponsors_EditDB.Web.pdb
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.csprojResolveAssemblyReference.cache
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.dll
+D:\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\obj\Release\TierSponsors_EditDB.Web.pdb
