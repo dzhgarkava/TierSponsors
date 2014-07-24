@@ -3,3 +3,9 @@ D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateD
 D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.pdb
 D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.exe
 D:\git\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.pdb
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe.config
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.exe
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\bin\Debug\TierSponsors_MigrateDB.pdb
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.exe
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.pdb
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_MigrateDB\obj\Debug\TierSponsors_MigrateDB.csprojResolveAssemblyReference.cache

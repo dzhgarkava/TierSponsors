@@ -16,3 +16,8 @@ D:\git\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.pdb
 D:\git\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.dll
 D:\git\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.pdb
 D:\git\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.dll.config
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.pdb

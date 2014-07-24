@@ -1,1 +1,1 @@
-\\psf\Home\Documents\Visual Studio 2012\Projects\TierSponsors\Tools\TierSponsors_EditDB.Web\TierSponsors_EditDB.Web.csproj,635125488590000000,Properties\AssemblyInfo.cs,ServiceEditDB_SL.svc.cs,
+\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_EditDB.Web\TierSponsors_EditDB.Web.csproj,635418300790000000,Properties\AssemblyInfo.cs,ServiceEditDB_SL.svc.cs,
