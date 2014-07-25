@@ -21,3 +21,4 @@ D:\git\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.csprojRe
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\bin\TierSponsors_Service.pdb
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.dll
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Service\obj\Debug\TierSponsors_Service.csprojResolveAssemblyReference.cache

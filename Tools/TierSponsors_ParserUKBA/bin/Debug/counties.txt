@@ -1,0 +1,804 @@
+Counties: 803
+
+-
+------
+- Please Select --
+- Select -
+-- Select --
+- Select US State -
+- State -
+(Select)
+Abderdeenshire
+Aberdeen
+ABERDEEN
+Aberdeen City
+Aberdeenshire
+ABerdeenshire
+ABERDEENSHIRE
+Acton
+Angas
+Anglesey
+Angus
+ANGUS
+Angus, Scotland
+antrim
+Antrim
+ANTRIM
+Argyll
+Argyll & Bute
+Argyll and Bute
+Armagh
+Attleborough
+Avon
+AVON
+Avon & Somerset
+Avon+ Somerset
+Aylesford
+Ayrshire
+AYRSHIRE
+Ayrshire, Scotland
+BANES
+Bannffshire
+BARKING
+Barnes
+Barnet
+Basildon
+Basingstoke
+Bath
+BATH
+Battersea
+Bedford
+bedfordshire
+Bedfordshire
+BEDFORDSHIRE
+Beds
+BEDS
+Belgravia
+BELGRAVIA
+berks
+Berks
+BERKS
+Berks.
+berkshire
+Berkshire
+BerkshIre
+BERKSHIRE
+Berkshire,
+BERKSHIRE,
+Berkshore
+Berskhire
+BERSKHRIE
+Berskshire
+Berwickshire
+BEXLEY
+Birkenhead
+Birmingham
+BIRMINGHAM
+Birmingham,
+Blaenau Gwent
+Brent
+Bridgend
+BRIDGEND
+Bristol
+BRISTOL
+buckinghamshire
+Buckinghamshire
+BUCKINGHAMSHIRE
+BUCKINGHAMSHRE
+Buckinghamshrie
+bucks
+Bucks
+BUCKS
+Bucks.
+CAERDYDD
+Caerphilly
+Caithness
+Camarthenshire
+CAMBERWELL
+Cambridge
+CAMBRIDGE
+Cambridgeshire
+CAMBRIDGESHIRE
+Cambridgshire
+Cambs
+CAMBS
+Cambs.
+Camden
+CAMDEN TOWN
+Cardiff
+CARDIFF
+Carmarthenshire
+CARMARTHENSHIRE
+Carms
+Central London
+Ceredigion
+CEREDIGION
+Cereidigion
+Chelsea
+cheshire
+Cheshire
+CHESHIRE
+Cheshire East
+Cheshire West
+Chesire
+Chessington
+Chester
+CHIPPENHAM
+CHISWICK
+Choose a County
+Chorley
+CIRENCESTER
+City of Edinburgh
+City of London
+City Of London
+Clackmannanshire
+Cleveland
+Clwyd
+Co Antrim
+Co Armagh
+Co Down
+Co Durham
+CO DURHAM
+Co Londonderry
+CO TRYONE
+Co Tyrone
+Co. Antrim
+Co. Armagh
+Co. Down
+Co. Durham
+Co. Durham.
+Co. Fermanagh
+Co. Tyrone
+Co.Antrim
+Co.Down
+Co.Durham
+Co.Kent
+Co.Londonderry
+Colchester
+Colwick
+Conwy
+cornwall
+Cornwall
+CORNWALL
+Co-Tyrone
+County Antrim
+COUNTY ANTRIM
+County Armagh
+County Down
+County Down, NI
+County Durham
+COUNTY DURHAM
+County Londonderry
+County Tyrone
+covent garden
+Covent Garden
+Coventry
+Croydon
+CROYDON
+Cumbria
+CUMBRIA
+Cupar
+Dalston
+Deerbyshire
+Denbighshire
+DENBIGHSHIRE
+Derby
+DERBYS
+Derbyshire
+DERBYSHIRE
+Derry
+devon
+Devon
+DEVON
+Devon,
+Devonshire
+Didcot
+Dorchester, Dorset
+dorset
+Dorset
+DORSET
+Down
+DOWN
+Dumfries & Galloway
+Dumfriesshire
+Dunbartonshire
+Durham
+DURHAM
+Dyfed
+E Sussex
+E. Sussex
+E. Yorks
+Ealing
+EAST ANGLIA
+East Ayrshire
+EAST AYRSHIRE
+East Dunbartonshire
+East Lothian
+EAST LOTHIAN
+East Midlands
+East Renfrewshire
+east sussex
+East Sussex
+EAST SUSSEX
+East Susssex
+East Yorkshire
+EAST YORKSHIRE
+Eastleigh
+EASTMIDLANDS
+EC2A 2RS
+Edinburgh
+Egham
+England
+ENGLAND
+essex
+Essex
+ESSEX
+EYorks
+Farnborough
+Farringdon
+fermanagh
+Fermanagh
+fife
+Fife
+FIFE
+Flintshire
+FLINTSHIRE
+Fulham
+GL
+Glamorgan
+Glasgow
+GLASGOW
+Glos
+Glos.
+GLOS.,
+Gloucester
+Gloucestershire
+GLOUCESTERSHIRE
+Gloucs
+Gloucstershire
+Grampian
+GRAMPIAN
+Great Britain (UK)
+Greater Glasgow
+Greater london
+Greater London
+GREATER LONDON
+Greater manchester
+Greater Manchester
+Greather Manchester
+Greator Manchester
+Greter Manchester
+GRL: Greater London
+Grt London
+Grtr M/c
+Gt London
+Gt Manchester
+Gtr Manchester
+GtrManchester
+Guildford
+Gwent
+GWENT
+Gwent, Wales
+Gwynedd
+GWYNEDD
+Gwynnedd
+Hackney
+HACKNEY
+Hammersmit
+Hammersmith
+Hamps
+Hampshair
+hampshire
+Hampshire
+HAMPSHIRE
+Hampsire
+Hampsshire
+Hamspshire
+Hants
+HANTS
+HARINGEY
+Harrow
+HARROW
+HAYES LONDON
+Hemel Hempstead
+Hereford
+Herefordshire
+Herfordshire
+HERTFODSHIRE
+hertfordhsire
+hertfordshire
+Hertfordshire
+HERTFORDSHIRE
+Hertforshire
+HERTFORSHIRE
+herts
+Herts
+HERTS
+Herttfordshire
+Highland
+Highlands
+Hockley
+Holland Park
+Hounslow
+HUDDERSFIELD
+Hull
+Humberside
+INNER LONDON
+Inverclyde
+Inverness shire
+Invernesshire
+Inverness-shire
+Inverness-Shire
+Ipswich
+IPSWICH
+Ise of Wight
+Isle of Anglesey
+Isle of Lewis
+Isle of Skye
+isle of wight
+Isle of wight
+Isle of Wight
+ISLE OF WIGHT
+islington
+Islington
+ISLINGTON
+Jersey, British Islands
+Kenilworth
+kent
+Kent
+KENT
+Kentish Town
+Kincardineshire
+Kingsbury
+Knowsley
+Lambeth
+Lanark
+lanarkshire
+Lanarkshire
+LANARKSHIRE
+Lanc
+lancashire
+Lancashire
+LANCASHIRE
+LANCASHIRE,
+Lancaster
+Lanchashire
+lancs
+Lancs
+LANCS
+Lancs.
+Lancshire
+Lansachire
+LE5 4BQ
+Leeds
+leices
+leicester
+Leicester
+leicestershire
+lEICESTERSHIRE
+Leicestershire
+LEICESTERSHIRE
+leics
+Leics
+LEICS
+Leics.
+LEWISHAM
+Leyton
+Lincoln
+lincolnshire
+Lincolnshire
+LINCOLNSHIRE
+Lincs
+LINCS
+lincs.
+LIPHOOK
+Liverpool
+LIVERPOOL
+Londenderry
+london
+London
+LONDON
+London,
+London, City of
+London, City Of
+London, UK
+London,City of
+Londond
+londonderry
+Londonderry
+LONDONDERRY
+lothian
+Lothian
+Lothians
+M16 6BH
+Maidenhead
+Manchester
+MANCHESTER
+Manor Park
+Mayfair
+Mayfaire
+Mddx
+Medway
+MEDWAY
+merseyside
+Merseyside
+MERSEYSIDE
+Mersyside
+Merthyr Tydfil
+Mid Galmorgan
+Mid Glamorgan
+MID GLAMORGAN
+Mid Lothian
+Middelsex
+MIddelsex
+Middesex
+Middex
+middlesex
+Middlesex
+MIDDLESEX
+Middlesex UB2 4DF
+MiddlesexX
+Middlessex
+Middllesex
+Middlsex
+middx
+Middx
+MIDDX
+Mid-Glamorgan
+Midlesex
+midlothian
+Midlothian
+Mid-lothian
+MIDLOTHIAN
+Midothian
+Milton Keynes
+Monmouthshire
+Moray
+Morpeth
+N E Lincolnshire
+N E LINCOLNSHIRE
+N E Lincs
+N Somerset
+N Yorks
+N YORKS
+N Yorkshire
+N. Ireland
+N. Yorks
+N.Yorks
+n/a
+N/A
+n176ua
+NE Lincolnshire
+Neath
+Neath Port Talbot
+New Port
+Newcastle Upon Tyne
+Newcastle-Upon-Tyne
+Newham
+NEWHAM
+Newport
+Newstead
+Newton Mearns
+No selection required
+None
+None (International)
+norfolk
+Norfolk
+NORFOLK
+North Ayrshire
+North Devon
+North East Lincolnshire
+North Humberside
+north lanarkshire
+North Lanarkshire
+north Lincolnshire
+North Lincolnshire
+NORTH LONDON
+North Somerset
+NORTH SOMERSET
+North Warwickshire
+North Yorks
+NORTH YORKS
+north Yorkshire
+North yorkshire
+North Yorkshire
+NORTH YORKSHIRE
+Northampton
+Northamptonshire
+Northants
+NORTHANTS
+Northern Ireland
+northumberland
+Northumberland
+NORTHUMBERLAND
+not applicable
+Not Applicable
+Nothamptonshire
+Notinghamshire
+Nottighamshire
+Nottingham
+NOTTINGHAM
+nottingham shire
+nottinghamshire
+Nottinghamshire
+NOTTINGHAMSHIRE
+Notts
+Notts.
+Nth Yorkshire
+Old Street
+Oldham
+Orkney
+Ottery St Mary
+Outer Hebrides
+Outside US
+Outside US & Canada
+Oval
+Oxford
+OXFORD
+oxfordshire
+Oxfordshire
+OXFORDSHIRE
+oxfordsire
+Oxfordsire
+Oxforshire
+oxon
+Oxon
+OXon
+OXON
+Oxon.
+Parklands
+Pembrokeshire
+Pembrokshire
+Perth and Kinross
+perthshire
+Perthshire
+Petworth
+Please choose...
+Please select
+Please Select
+Please select a state
+Please select...
+Pontypridd
+Port Talbot
+Powys
+POWYS
+RCT
+READING
+Renfrewshire
+RENFREWSHIRE
+Rhondda Cynon Taff
+Romford
+Rossendale
+ross-shire
+Ross-shire
+Ross-Shire
+ROSS-SHIRE
+Roxburghshire
+Rutland
+RUTLAND
+S Glos
+s yorks
+S Yorks
+S YORKS
+S. Glos
+S. Yorks
+S. Yorkshire
+scotland
+Scotland
+SCOTLAND
+Scottish Borders
+SCOTTLAND
+SE1 6LH
+SE22
+--Select --
+Select a State
+Select One
+Select State
+Select...
+Selkirkshire
+Sevenoaks
+Shetland
+Shoredicth
+Shoreditch
+Shropshire
+SHROPSHIRE
+Slough
+Soho
+Solihull
+SOLIHULL
+Som
+somerset
+Somerset
+SOMERSET
+Somerset & Avon
+Sout Yorkshire
+South Ayrshire
+SOUTH BERKS
+south glamorgan
+South Glamorgan
+South Glos
+SOUTH GLOS
+South Gloucestershire
+South Kensington
+South Lanarkshire
+SOUTH LONDON
+SOUTH NORWOOD
+SOUTH STAFFS
+South Wales
+South Yorks
+south yorkshire
+South yorkshire
+South Yorkshire
+SOUTH YORKSHIRE
+Southampton
+SOUTHAMPTON
+Southwark
+SOUTHWARK
+Southyorkshire
+Speke Road
+St Albans
+St James
+staffordshire
+Staffordshire
+STAFFORDSHIRE
+Staffordshite
+STAFFORSHIRE
+Stafforsshire
+Staffrodshire
+Staffs
+STAFFS
+State
+Stirling
+stirlingshire
+Stirlingshire
+STIRLINGSHIRE
+Stockport
+Stockton-on-Tees
+Stoke-on-Trent
+Strahclyde
+Stratford
+Strathclyde
+Suffolk
+SUFFOLK
+Sureey
+Surey
+surrey
+Surrey
+SURREY
+Surrey,
+Sussex
+Sutton, Surrey
+Swansea
+SWANSEA
+Syrrey
+Tameside
+Tayside
+Tees Valley
+Teesside
+TONBRIDGE
+Torfaen
+TORFAEN
+TOWER HAMLET
+Tower Hamlets
+TW5 0BS
+Twickenham
+Tyna and Wear
+tyne & wear
+Tyne & wear
+Tyne & Wear
+TYNE & WEAR
+Tyne and wear
+Tyne and Wear
+Tyne And Wear
+TYne and Wear
+TYNE AND WEAR
+Tyrone
+TYRONE
+uk
+Uk
+UK
+UK Mainland
+united kingdom
+United kingdom
+United Kingdom
+UNITED KINGDOM
+Unspecified
+US Customers only
+Uxbridge
+Vale of Glamorgan
+Vale Of Glamorgan
+Victoria
+W Glam
+w sx
+W Yorks
+W Yorkshire
+W. Midlands
+W. Yorks
+W.Mids
+W10 5BE
+wales
+Wales
+WALES
+Walsall
+Wandsworth
+WANDSWORTH
+Ware
+ware, herts
+Warks
+Warkwickshire
+Warrington
+Warwicks
+Warwickshire
+WARWICKSHIRE
+WATFORD
+Weat Yorkshire
+WEMBLEY
+West Berkshire
+West Dumbartonshire
+West Dunbartonshire
+West Dundee
+WEST EALING
+West Glam
+West Glamorgan
+WEST GLYMORGAN
+West Hampstead
+West London
+west lothian
+West Lothian
+WEST LOTHIAN
+west loyhian
+west midland
+West Midland
+WEST MIDLAND
+west midlands
+west Midlands
+West midlands
+West Midlands
+WEST MIDLANDS
+West Mids.
+West minland
+West Mislands
+west sussex
+West sussex
+West Sussex
+WEST SUSSEX
+West Sussex,
+West Yokrshire
+West Yorks
+WEST YORKS
+West Yorks.
+west yorkshire
+West yorkshire
+West Yorkshire
+WEST YORKSHIRE
+Western Isles
+Westhoughton
+westmidlands
+Westmidlands
+West-Midlands
+WESTMIDLANDS
+WEST-MIDLANDS
+Westminster
+WESTMINSTER
+WESTYORKSHIRE
+Wilsthire
+Wilts
+WILTS
+wiltshire
+Wiltshire
+WILTSHIRE
+Wimbledon Village
+Wirral
+Wolverhampton
+Woolwich
+Worcester
+Worcestershire
+WORCESTERSHIRE
+Worchestershire
+Worcs
+WORCS
+Wrexham
+Yes
+York
+Yorkshire
+YORKSHIRE
