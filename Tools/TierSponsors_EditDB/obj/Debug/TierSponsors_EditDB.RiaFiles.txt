@@ -1,2 +1,0 @@
-\\psf\Home\Documents\_dev\TierSponsors\Tools\TierSponsors_EditDB
-Generated_Code\TierSponsors_EditDB.Web.g.cs

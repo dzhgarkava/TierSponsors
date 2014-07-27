@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="TierSponsors_EditDB.Web.ServiceEditDB_SL" CodeBehind="ServiceEditDB_SL.svc.cs" %>
