@@ -1,0 +1,12 @@
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\TierSponsors_MakerBetter.exe.config
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\TierSponsors_MakerBetter.exe
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\TierSponsors_MakerBetter.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\EntityFramework.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\TierSponsors_DataModel.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\TierSponsors_DataModel.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\EntityFramework.xml
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\obj\Debug\TierSponsors_MakerBetter.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\obj\Debug\TierSponsors_MakerBetter.exe
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_MakerBetter\obj\Debug\TierSponsors_MakerBetter.pdb

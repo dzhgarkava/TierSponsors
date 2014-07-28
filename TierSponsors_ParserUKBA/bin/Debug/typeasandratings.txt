@@ -1,0 +1,9 @@
+TypeAndRatings: 8
+Tier 2 (A rating)
+Tier 5 (A rating)
+Tier 2 (B rating)
+Tier 5 (B rating)
+Tier 2 (A (Premium))
+Tier 2 (A (SME+))
+Tier 5 (A (Premium))
+Tier 5 (Highly Trusted Sponsor)

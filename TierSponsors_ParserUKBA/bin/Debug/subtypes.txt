@@ -1,0 +1,9 @@
+SubTypes: 8
+Tier 2 General
+Intra Company Transfers (ICT)
+Creative & Sporting
+Religious Workers
+Sport
+Voluntary Workers
+Exchange
+International Agreements

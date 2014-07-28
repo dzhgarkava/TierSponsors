@@ -25,6 +25,6 @@
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\bin\System.Web.WebPages.xml
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\bin\System.Web.WebPages.Deployment.xml
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\bin\System.Web.WebPages.Razor.xml
-\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\obj\Debug\TierSponsors_Web.csprojResolveAssemblyReference.cache
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\obj\Debug\TierSponsors_Web.dll
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\obj\Debug\TierSponsors_Web.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_Web\obj\Debug\TierSponsors_Web.csprojResolveAssemblyReference.cache

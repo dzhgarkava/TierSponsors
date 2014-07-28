@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using HtmlAgilityPack;
+using TierSponsors_DataModel;
 
 
 namespace TierSponsors_ParserUKBA
@@ -21,13 +22,6 @@ namespace TierSponsors_ParserUKBA
             var orgsFromHtml = ParseHtml("html_sponsorslist.html");
             var orgsFromText = ParseText("sponsorslist.txt");
 
-            var firstFromHtlm = orgsFromHtml.First();
-            var firstFromText = orgsFromText.First();
-            Console.WriteLine(firstFromHtlm.Name + " " + firstFromHtlm.Hash);
-            Console.WriteLine(firstFromText.Name + " " + firstFromText.Hash);
-
-            Console.WriteLine(firstFromHtlm.Hash == firstFromText.Hash);
-            
             foreach (var org in orgsFromText)
             {
                 var found = orgsFromHtml.Where(x => x.Hash.Equals(org.Hash)).ToList();
@@ -49,79 +43,138 @@ namespace TierSponsors_ParserUKBA
 
             var cities = new List<String>();
             var counties = new List<String>();
+            var typesandratings = new List<String>();
+            var subtypes = new List<String>();
 
             foreach (var org in orgsFromText)
             {
                 if (cities.All(x => x != org.City)) cities.Add(org.City);
                 if (counties.All(x => x != org.County)) counties.Add(org.County);
+                foreach (var v in org.Visas)
+                {
+                    if (typesandratings.All(x=>x != v.TypeAndRating)) typesandratings.Add(v.TypeAndRating);
+                    if (subtypes.All(x=>x != v.SubType)) subtypes.Add(v.SubType);
+                }
             }
 
-            TextWriter wrCities = File.CreateText("cities.txt");
-            wrCities.WriteLine("Cities: " + cities.Count);
-            foreach (var city in cities.OrderBy(s => s))
-                wrCities.WriteLine(city);
-            wrCities.Close();
+            //TextWriter wrRatingAndTypes = File.CreateText("typeasandratings.txt");
+            //wrRatingAndTypes.WriteLine("TypeAndRatings: " + typesandratings.Count);
+            //foreach (var typesandrating in typesandratings)
+            //    wrRatingAndTypes.WriteLine(typesandrating);
+            //wrRatingAndTypes.Close();
 
-            TextWriter wrCounties = File.CreateText("counties.txt");
-            wrCounties.WriteLine("Counties: " + counties.Count);
-            foreach (var county in counties.OrderBy(s => s))
-                wrCounties.WriteLine(county);
-            wrCounties.Close();
+            //TextWriter wrSubTypes = File.CreateText("subtypes.txt");
+            //wrSubTypes.WriteLine("SubTypes: " + subtypes.Count);
+            //foreach (var subtype in subtypes)
+            //    wrSubTypes.WriteLine(subtype);
+            //wrSubTypes.Close();
+
+            //TextWriter wrCities = File.CreateText("cities.txt");
+            //wrCities.WriteLine("Cities: " + cities.Count);
+            //foreach (var city in cities.OrderBy(s => s))
+            //    wrCities.WriteLine(city);
+            //wrCities.Close();
+
+            //TextWriter wrCounties = File.CreateText("counties.txt");
+            //wrCounties.WriteLine("Counties: " + counties.Count);
+            //foreach (var county in counties.OrderBy(s => s))
+            //    wrCounties.WriteLine(county);
+            //wrCounties.Close();
 
             // Пищем в базу
-            //MoveDataToDb(orgs);
+            // MoveDataToDb(orgsFromText);
             
             Console.WriteLine();
             Console.ReadKey();
         }
 
-        public class Organisation
+        private static void MoveDataToDb(IEnumerable<OrganisationInfo> orgs)
         {
-            public String Name { get; set; }
-            public List<Visa> Visas { get; set; }
-            public string City { get; set; }
-            public string County { get; set; }
-            public string Country { get; set; }
-            public string Hash { get; set; }
-            public string UkbaOriginal { get; set; }
-            public bool Authorized { get; set; }
+            var db = new DataContext();
+            var count = 0;
 
-            public Organisation()
+            foreach (var org in orgs)
             {
-                Visas = new List<Visa>();
-            }
-        }
-
-        public class Visa
-        {
-            public string TypeAndRating { get; set; }
-            public string SubType { get; set; }
-        }
-
-        private static void MoveDataToDb(IEnumerable<Organisation> orgs)
-        {
-            const string connectionString = "Data Source=project10-devel;Initial Catalog=test_ilawiuk;Integrated Security=True;User ID=pmo_reporting;Password=Ps71_iE";
-            using (var connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-                var da = new SqlDataAdapter("select * from test_ilawiuk.dbo.tdMain", connectionString);
-                var ds = new DataSet();
-                da.Fill(ds);
-
-                foreach (var org in orgs)
+                count++;
+                var sponsor = new Organisation
                 {
-                    DataRow dr = ds.Tables[0].NewRow();
-                    dr["NameCityCounty"] = org.Name;
-                    dr["OriginalUKBA"] = org.Name;
-                    ds.Tables[0].Rows.Add(dr);
-                }
+                    Name = org.Name,
+                    Hash = org.Hash,
+                    DateChanges = DateTime.Now,
+                    UkbaOriginal = org.UkbaOriginal,
+                    TempCity = org.City,
+                    TempCounty = org.County,
+                    Visas = new List<Visa>()
+                };
+                foreach (var visaInfo in org.Visas)
+                {
+                    var visa = new Visa();
+                    var tierandrating = visaInfo.TypeAndRating;
+                    if (tierandrating.StartsWith("Tier 2 ") || tierandrating.StartsWith("Tier 5 "))
+                    {
+                        if (tierandrating.StartsWith("Tier 2 "))
+                            visa.Type = db.Types.First(x => x.Name == "Tier 2");
+                        
+                        if (tierandrating.StartsWith("Tier 5 "))
+                            visa.Type = db.Types.First(x => x.Name == "Tier 5");
+                        
+                        var rating = tierandrating.Remove(0, 7);
+                        switch (rating)
+                        {
+                            case "(A rating)":
+                            {
+                                visa.Rating = db.Ratings.First(x => x.Name == "A rating" && x.Additional == "");
+                                break;
+                            }
+                            case "(A (Premium))":
+                            {
+                                visa.Rating = db.Ratings.First(x => x.Name == "A rating" && x.Additional == "Premium");
+                                break;
+                            }
+                            case "(A (SME+))":
+                            {
+                                visa.Rating = db.Ratings.First(x => x.Name == "A rating" && x.Additional == "SME+");
+                                break;
+                            }
+                            case "(Highly Trusted Sponsor)":
+                            {
+                                visa.Rating =
+                                    db.Ratings.First(
+                                        x => x.Name == "A rating" && x.Additional == "Highly Trusted Sponsor");
+                                break;
+                            }
+                            case "(B rating)":
+                            {
+                                visa.Rating = db.Ratings.First(x => x.Name == "B rating" && x.Additional == "");
+                                break;
+                            }
+                            case "(B (Premium))":
+                            {
+                                visa.Rating = db.Ratings.First(x => x.Name == "B rating" && x.Additional == "Premium");
+                                break;
+                            }
+                            case "(B (SME+))":
+                            {
+                                visa.Rating = db.Ratings.First(x => x.Name == "B rating" && x.Additional == "SME+");
+                                break;
+                            }
+                        }
+                        
+                        visa.SubType = db.SubTypes.First(x => x.Name == visaInfo.SubType);
 
-                var builder = new SqlCommandBuilder(da);
-                builder.GetUpdateCommand();
-                da.Update(ds);
-                connection.Close();
+                        sponsor.Visas.Add(visa);
+                    }
+                }
+                db.Organisations.Add(sponsor);
+                Console.WriteLine(sponsor.Name);
+                if (count == 500)
+                {
+                    count = 0;
+                    db.SaveChanges();
+                    db = new DataContext();
+                }
             }
+            db.SaveChanges();
         }
 
         private static string CalculateMd5Hash(string input)
@@ -140,7 +193,7 @@ namespace TierSponsors_ParserUKBA
             return sb.ToString();
         }
 
-        private static List<Organisation> ParseHtml(string path)
+        private static List<OrganisationInfo> ParseHtml(string path)
         {
             TextReader reader = File.OpenText(path);
             var html = reader.ReadToEnd();
@@ -194,12 +247,12 @@ namespace TierSponsors_ParserUKBA
             for (int i = 0; i < 7; i++)
                 blocks.RemoveAt(blocks.Count-1);
 
-            var orgs = new List<Organisation>();
+            var orgs = new List<OrganisationInfo>();
             for (int i = 0; i < blocks.Count; i++)
             {
                 if (blocks[i].StartsWith("Name: "))
                 {
-                    var org = new Organisation {Name = blocks[i].Replace("Name: ", "")};
+                    var org = new OrganisationInfo {Name = blocks[i].Replace("Name: ", "")};
                     if (i + 1 != blocks.Count)
                     {
                         if (blocks[i + 1].StartsWith("City: "))
@@ -226,7 +279,7 @@ namespace TierSponsors_ParserUKBA
                         {
                             if (blocks[i + 1].StartsWith("TierAndRating: ") && blocks[i + 2].StartsWith("SubTier: "))
                             {
-                                var visa = new Visa
+                                var visa = new VisaInfo
                                 {
                                     TypeAndRating = blocks[i + 1].Replace("TierAndRating: ", ""),
                                     SubType = blocks[i + 2].Replace("SubTier: ", "")
@@ -256,7 +309,7 @@ namespace TierSponsors_ParserUKBA
             return orgs;
         }
 
-        private static List<Organisation> ParseText(string path)
+        private static List<OrganisationInfo> ParseText(string path)
         {
             var block = new List<String>();
 
@@ -302,7 +355,7 @@ namespace TierSponsors_ParserUKBA
             //    {
             //        if (block.Count == 0) break;
 
-            //        var org = new Organisation {Name = block[0]};
+            //        var org = new OrganisationInfo {Name = block[0]};
             //        //Console.WriteLine(block[0].ToString());
             //        block.RemoveAt(0);
 
@@ -339,11 +392,11 @@ namespace TierSponsors_ParserUKBA
             //    Console.WriteLine();
             //}
 
-            var orgs = new List<Organisation>();
+            var orgs = new List<OrganisationInfo>();
 
             for (int i = 0; i < block.Count; i++)
             {
-                var org = new Organisation { UkbaOriginal = block[i] };
+                var org = new OrganisationInfo { UkbaOriginal = block[i] };
 
                 while (true)
                 {
@@ -352,7 +405,7 @@ namespace TierSponsors_ParserUKBA
                     var visainfo = block[i + 1];
                     if (visainfo.Contains(" (Premium))"))
                     {
-                        var visa = new Visa
+                        var visa = new VisaInfo
                         {
                             TypeAndRating = visainfo.Remove(visainfo.IndexOf(" (Premium))", StringComparison.Ordinal) + 11),
                             SubType = visainfo.Remove(0, visainfo.IndexOf(" (Premium))", StringComparison.Ordinal) + 12)
@@ -362,7 +415,7 @@ namespace TierSponsors_ParserUKBA
                     }
                     else if (visainfo.Contains(" rating)"))
                     {
-                        var visa = new Visa
+                        var visa = new VisaInfo
                         {
                             TypeAndRating = visainfo.Remove(visainfo.IndexOf(" rating)", StringComparison.Ordinal) + 8),
                             SubType = visainfo.Remove(0, visainfo.IndexOf(" rating)", StringComparison.Ordinal) + 9)
@@ -372,7 +425,7 @@ namespace TierSponsors_ParserUKBA
                     }
                     else if (visainfo.Contains(" (SME+))"))
                     {
-                        var visa = new Visa
+                        var visa = new VisaInfo
                         {
                             TypeAndRating = visainfo.Remove(visainfo.IndexOf(" (SME+))", StringComparison.Ordinal) + 8),
                             SubType = visainfo.Remove(0, visainfo.IndexOf(" (SME+))", StringComparison.Ordinal) + 9)
@@ -382,7 +435,7 @@ namespace TierSponsors_ParserUKBA
                     }
                     else if (visainfo.Contains("Tier 5 (Highly Trusted SpoVnoslourn)tary Workers"))
                     {
-                        var visa = new Visa
+                        var visa = new VisaInfo
                         {
                             TypeAndRating = "Tier 5 (Highly Trusted Sponsor)",
                             SubType = "Voluntary Workers"
@@ -406,5 +459,58 @@ namespace TierSponsors_ParserUKBA
             return orgs;
         }
 
+        private static void InitDataBase()
+        {
+            var db = new DataContext();
+
+            db.Countries.Add(new Country { Name = "England" });
+            db.Countries.Add(new Country { Name = "Scotland" });
+            db.Countries.Add(new Country { Name = "Wales" });
+            db.Countries.Add(new Country { Name = "Northern Ireland" });
+
+            db.Ratings.Add(new Rating { Name = "A rating", Additional = "" });
+            db.Ratings.Add(new Rating { Name = "A rating", Additional = "Premium" });
+            db.Ratings.Add(new Rating { Name = "A rating", Additional = "SME+" });
+            db.Ratings.Add(new Rating { Name = "A rating", Additional = "Highly Trusted Sponsor" });
+            db.Ratings.Add(new Rating { Name = "B rating", Additional = "" });
+            db.Ratings.Add(new Rating { Name = "B rating", Additional = "Premium" });
+            db.Ratings.Add(new Rating { Name = "B rating", Additional = "SME+" });
+
+            db.Types.Add(new VisaType { Name = "Tier 2" });
+            db.Types.Add(new VisaType { Name = "Tier 5" });
+
+            db.SubTypes.Add(new SubType { Name = "Tier 2 General" });
+            db.SubTypes.Add(new SubType { Name = "Intra Company Transfers (ICT)" });
+            db.SubTypes.Add(new SubType { Name = "Creative & Sporting" });
+            db.SubTypes.Add(new SubType { Name = "Religious Workers" });
+            db.SubTypes.Add(new SubType { Name = "Sport" });
+            db.SubTypes.Add(new SubType { Name = "Voluntary Workers" });
+            db.SubTypes.Add(new SubType { Name = "Exchange" });
+            db.SubTypes.Add(new SubType { Name = "International Agreements" });
+
+            db.SaveChanges();
+        }
+        public class OrganisationInfo
+        {
+            public String Name { get; set; }
+            public List<VisaInfo> Visas { get; set; }
+            public string City { get; set; }
+            public string County { get; set; }
+            public string Country { get; set; }
+            public string Hash { get; set; }
+            public string UkbaOriginal { get; set; }
+            public bool Authorized { get; set; }
+
+            public OrganisationInfo()
+            {
+                Visas = new List<VisaInfo>();
+            }
+        }
+
+        public class VisaInfo
+        {
+            public string TypeAndRating { get; set; }
+            public string SubType { get; set; }
+        }
     }
 }

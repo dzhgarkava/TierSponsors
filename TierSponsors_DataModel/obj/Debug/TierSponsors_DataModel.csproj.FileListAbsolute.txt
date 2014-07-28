@@ -1,0 +1,10 @@
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\TierSponsors_DataModel.dll.config
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\TierSponsors_DataModel.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\TierSponsors_DataModel.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\EntityFramework.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\EntityFramework.xml
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\obj\Debug\TierSponsors_DataModel.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\obj\Debug\TierSponsors_DataModel.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_DataModel\obj\Debug\TierSponsors_DataModel.csprojResolveAssemblyReference.cache

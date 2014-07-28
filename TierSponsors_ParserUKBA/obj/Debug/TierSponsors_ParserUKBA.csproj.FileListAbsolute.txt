@@ -20,3 +20,9 @@ D:\git\TierSponsors\Tools\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserU
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.exe
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_ParserUKBA.pdb
 \\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\obj\Debug\TierSponsors_ParserUKBA.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\EntityFramework.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_DataModel.dll
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\TierSponsors_DataModel.pdb
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\EntityFramework.xml
+\\psf\Home\Documents\_dev\TierSponsors\TierSponsors_ParserUKBA\bin\Debug\EntityFramework.SqlServer.xml
